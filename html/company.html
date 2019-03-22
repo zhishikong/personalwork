@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>利剑连</title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-transform" />
+		<link rel="stylesheet" type="text/css" href="../css/app.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/amazeui.css"/>
+	<style type="text/css">
+		/*初始化*/
+		*{
+			text-align: center;
+			margin: 0;padding: 0;
+			list-style: none;
+		}
+		
+		.head_img{
+			width: 100%;
+		}
+		.head_img > img {
+			width: 100%;
+		}
+		.am-intro-hd{
+			margin-top: 5rem;
+		}
+		.head_img{
+			margin: 0 auto;
+		}
+		/*导航*/
+		.am-navbar{
+			background-color: #363636;
+		}
+		.am-navbar-nav>li>a{
+			color: white !important;
+		}
+
+		.am-btn>*{
+			color: white;
+		}
+		.am-offcanvas{
+			
+		}
+
+		/*菜单球*/
+		.menuball{
+			width: 50px;
+			position: fixed;
+			bottom: 1.3%;
+			border-radius: 50%;
+		}
+		.menuball > a > span{
+			color: white;
+		}
+		
+		/*侧滑栏*/
+		.am-offcanvas-bar-left{
+			width: 100%;
+			height: 50%;
+			margin: 40% 0 0 0;
+		}
+		.am-offcanvas-bar-right{
+			width: 100%;
+		}
+		/*地图*/
+		#map_wrapper{ 
+		transform:scale(1,1);
+		-webkit-transform:scale(1, 1);
+		}
+		
+		/*index.html*/
+		/*背景色*/
+		.bgcolor_white{
+			background-color: white !important;
+		}
+		.bgcolor_gray{
+			margin: 2rem 0 1rem 0;
+			background-color: #E8E8E8;
+		}
+		/*面板*/
+		.panel1{
+			color: black;
+			background-color: white;
+		}
+		
+		.p_margin{
+			margin: 0;
+			padding: 0;
+		}
+		/*列表*/
+		.am-list-item-hd > a{
+			color: black;
+		}
+		/*字体红色*/
+		.font_red{
+			color: red;
+			font-weight:bold ;
+			font-size: 110%;
+		}
+		/*面板标题*/
+		.am-panel-title1{
+			font-family: "微软雅黑";
+			color: #8B0000 !important;
+			font-size: 130%;
+			font-weight: bold;
+		}
+		.am-panel-hd{
+			border: none;
+		}
+		.am-panel-default{
+			border: none;
+		}
+		/*理由标题*/
+		.reason_title{
+			margin-top: -14px;
+			padding: 0 20px;
+			height: auto;
+			background-color: white;
+			font-size: 2.5rem;
+			float: left;
+			overflow: hidden;
+		}
+		/*理由容器*/
+		.reason_body{
+			border: 1px solid black;
+			margin: 30px 20px;
+			padding: 0;
+		}
+		.reason_title > span{
+			padding: 0px 6px;
+			background-color: #EE0000;
+			color: white;
+		}
+		.reason_title ~ p{
+			width: 100%;
+			overflow: hidden;
+			font-size: 1.5rem;
+		}
+		/*index.html△*/
+		
+
+	</style>
+	</head>
+	<body> 
+		<div class="mybody">
+			<!--
+            	头部
+            -->
+            <div class="head_img">
+            	<img src="../img/company_1.jpg" class="am-img-responsive" alt="一流策划公司" />
+            </div>
+            <!--公司介绍-->
+            <article class="am-article">
+            	<div class="am-article-hd">
+            		<h2 class="">利剑连 = 战略 x 创意 x 推广</h2>
+            		<h4 style="padding: 0 2rem;text-align: center;" data-am-scrollspy="{animation:'fade', delay: 150}">
+            							公司位于顺德XX级科技企业孵化器 ——广东工业设计城内 拥有700平方米的创意空间，
+            						多兵种的创意部队， 利剑连打破传统创意机构的单一服务限制 在产品、品牌、行销等
+            						领域为成长型企业提供营销帮扶， 服务团队包括有营销专家、品牌专家、产品专家、 
+            						网络营销专家以及各类资深设计师等 不同领域的专才组成 为客户提供品牌定位、广告
+            						设计、产品创意、 VI设计、文案策划、官网设计、网店装修、数字营销、 网络推广、
+            						营销活动策划、路演策划等服务 是中国家具重镇—顺德XX区域品牌战略顾问单位 迄今
+            						为超过100个品牌提供策划服务。
+            						</h4>
+            	</div>
+            </article>
+            <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+            <!--轮播图-->
+            <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{"animation":"slide","controlNav":"thumbnails"}'>
+            	<ul class="am-slides">
+            		<li data-thumb="../img/p2.jpg">
+            			<img src="../img/p2.jpg">
+            
+            		</li>
+            		<li data-thumb="../img/p1.jpg">
+            			<img src="../img/p1.jpg">
+            
+            		</li>
+            		<li data-thumb="../img/p3.jpg">
+            			<img src="../img/p3.jpg">
+            
+            		</li>
+            		<li data-thumb="../img/p4.jpg">
+            			<img src="../img/p4.jpg">
+            
+            		</li>
+            	</ul>
+            </div>
+            </div>
+            <!--轮播图△-->
+            
+            <!--菜单左侧滑栏-->
+            <nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+            	<div style="" class="am-offcanvas" id="offcanvasId">
+            		<div class="am-offcanvas-bar am-offcanvas-bar-left">
+            			<ul style="text-align: center;" class="am-menu-nav am-avg-sm-1">
+            				<li>
+            					<a id="index_h" href="../index.html" class="">首页</a>
+            
+            				</li>
+            				<li class="">
+            					<a href="##" class="">公司</a>
+            
+            				</li>
+            				<li class="">
+            					<a href="##" class="">案例</a>
+            
+            				</li>
+            				<li class="">
+            					<a href="##" class="">服务</a>
+            
+            				</li>
+            				<li class="">
+            					<a href="##" class="">方法</a>
+            				</li>
+            				<li class="">
+            					<a href="##" class="">近况</a>
+            				</li>
+            			</ul>
+            
+            		</div>
+            	</div>
+            </nav>
+            <!--菜单左侧滑栏-->
+            <!--地图右侧边栏 -->
+            <div id="map_slider" class="am-offcanvas">
+            	<div class="am-offcanvas-bar am-offcanvas-bar-flip am-offcanvas-bar-right">
+            		<div style="padding: 0;margin: 0;" class="am-offcanvas-content">
+            			<iframe id="map_wrapper" src="" style="padding: 0;margin: 0;">	
+            			</iframe>
+            		</div>
+            	</div>
+            </div>
+            <!--地图右侧边栏△-->
+            <!--模态框-->
+            <div class="am-modal am-modal-no-btn" tabindex="-1" id="phonecall">
+            	<div class="am-modal-dialog">
+            		<div class="am-modal-hd">电话
+            			<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+            		</div>
+            		<div class="am-modal-bd">
+            			联系手机号：134XXXXXXXX
+            		</div>
+            	</div>
+            </div>
+            <!--模态框△-->
+            <!--底部导航栏/工具栏-->
+            <div class="am-navbar" data-am-widget="navbar">
+            	<ul class="am-navbar-nav  am-avg-sm-5">
+            		<li>
+            			<a href="sms:13802488171" id="">
+            				<span class="am-icon-envelope"></span>
+            				<span class="am-navbar-label">信息咨询</span>
+            			</a>
+            		</li>
+            		<li class="online_map" data-am-offcanvas="{target: '#map_slider'}">
+            			<a href="javascript:void(0);" id="">
+            				<span class="am-icon-map-marker"></span>
+            				<span class="am-navbar-label">在线地图</span>
+            			</a>
+            		</li>
+            
+            		<li>
+            			<div class="menuball">
+            				<a href="#" class="menubar" style="border-radius: 50%;background-color: #363636;" data-am-offcanvas="{target: '#offcanvasId'}">
+            					<span class="am-icon-list"></span>
+            					<span class="am-navbar-label">菜单</span>
+            					<!---->
+            				</a>
+            			</div>
+            		</li>
+            		<li class="">
+            			<a href="html/message.html" id="">
+            				<span class="am-icon-comment"></span>
+            				<span class="am-navbar-label">在线留言</span>
+            			</a>
+            		</li>
+            		<li class="" data-am-modal="{target: '#phonecall', closeViaDimmer: 0, width: 300, height: 125}">
+            			<a href="javascript:void(0);" id="">
+            				<span class="am-icon-phone"></span>
+            				<span class="am-navbar-label">电话咨询</span>
+            			</a>
+            		</li>
+            	</ul>
+            </div>
+            <!--底部导航栏/工具栏-->
+			
+			<!--页尾-->
+			<!--页尾-->
+			<footer data-am-widget="footer" class="am-footer am-footer-default" data-am-footer="{  }">
+			
+				<div class="am-footer-miscs ">
+					<p>由
+						<a href="http://www.yunshipei.com/" title="利剑连" target="_blank" class="">
+							利剑连-珠三角二流策划机构
+						</a>
+						版权所有
+					</p>
+					<p>网站备案 /许可证号：粤ICP备11092879号-5</p>
+					<p>
+						<a href="#" title="利剑连" target="_blank" class="">
+							本站使用凡科建站搭建
+						</a>
+						<span class="am-footer-divider"> | </span>
+						<a id="godesktop" href="#" class="am-footer-desktop" data-rel="desktop">
+							电脑版
+						</a>
+					</p>
+				</div>
+			</footer>
+		</div>
+		
+		<script src="../js/jquery-3.0.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/amazeui.js" type="text/javascript" charset="utf-8"></script> 
+		<script src="../js/handlebars.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/amazeui.widgets.helper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//调整菜单球水平位置▽
+			var menuball_width = Math.ceil($(".menuball").width()/2);
+			var win_width = Math.ceil($(window).width()/2);
+			var width = win_width - menuball_width;
+			$(".menuball").css("left",width);
+			//调整菜单球位置△
+			//侧滑栏高度
+			 var offcanvas_height = $("#index_h").outerHeight()*6+1;
+			$(".am-offcanvas-bar").css("height",offcanvas_height);
+			//侧滑栏高度△
+			
+			//网页加载后
+			$(document).ready(function(){
+				//地图加载
+				$(".online_map").on("click",function(){
+					/*右侧滑栏iframe加载网页*/
+					var map_url = "https://map.baidu.com/mobile/webapp/index/index#place/detail/qt=s&wd=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E8%AE%BE%E8%AE%A1%E5%9F%8E2%E6%9C%9F%E8%A5%BF%E5%BA%A74%E6%A5%BC&c=138&searchFlag=bigBox&version=5&exptype=dep&src_from=webapp_all_bigbox&src=0/i=0&showall=1&pos=0&da_ref=listclk&da_qrtp=41&da_adquery=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E8%AE%BE%E8%AE%A1%E5%9F%8E2%E6%9C%9F%E8%A5%BF%E5%BA%A74%E6%A5%BC&da_adtitle=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E8%AE%BE%E8%AE%A1%E5%9F%8E2%E6%9C%9F%E8%A5%BF%E5%BA%A74%E6%A5%BC&detail_from=list&vt=map";
+					if($("#map_wrapper").attr("src")==""){
+						$("#map_wrapper").attr("src", map_url);
+					};
+					/*右侧滑栏高度调整*/
+					var rightsli_height = $(window).height()-$(".am-navbar-nav").outerHeight();
+					$(".am-offcanvas-bar-right").css("height", rightsli_height);
+					/*地图宽高调整*/
+					var map_width = $(window).width();
+					var map_height = $("#map_wrapper").parent().parent().height()-6;
+					$("#map_wrapper").attr("width",map_width);
+					$("#map_wrapper").attr("height",map_height);
+				
+				});
+			});
+			//网页加载后△
+		</script>
+
+	</body>
+</html>
