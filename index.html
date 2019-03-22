@@ -556,7 +556,8 @@
 				//地图加载
 				$(".online_map").on("click",function(){ 
 					/*右侧滑栏iframe加载网页*/
-					var map_url = "https://map.baidu.com/mobile/webapp/index/index#place/detail/qt=s&wd=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E8%AE%BE%E8%AE%A1%E5%9F%8E2%E6%9C%9F%E8%A5%BF%E5%BA%A74%E6%A5%BC&c=138&searchFlag=bigBox&version=5&exptype=dep&src_from=webapp_all_bigbox&src=0/i=0&showall=1&pos=0&da_ref=listclk&da_qrtp=41&da_adquery=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E8%AE%BE%E8%AE%A1%E5%9F%8E2%E6%9C%9F%E8%A5%BF%E5%BA%A74%E6%A5%BC&da_adtitle=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E8%AE%BE%E8%AE%A1%E5%9F%8E2%E6%9C%9F%E8%A5%BF%E5%BA%A74%E6%A5%BC&detail_from=list&vt=map";
+					//var map_url = "https://map.baidu.com/mobile/webapp/index/index#place/detail/qt=s&wd=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E8%AE%BE%E8%AE%A1%E5%9F%8E2%E6%9C%9F%E8%A5%BF%E5%BA%A74%E6%A5%BC&c=138&searchFlag=bigBox&version=5&exptype=dep&src_from=webapp_all_bigbox&src=0/i=0&showall=1&pos=0&da_ref=listclk&da_qrtp=41&da_adquery=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E8%AE%BE%E8%AE%A1%E5%9F%8E2%E6%9C%9F%E8%A5%BF%E5%BA%A74%E6%A5%BC&da_adtitle=%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E8%AE%BE%E8%AE%A1%E5%9F%8E2%E6%9C%9F%E8%A5%BF%E5%BA%A74%E6%A5%BC&detail_from=list&vt=map";
+					var map_url = "https://map.baidu.com/mobile/webapp/place/detail/qt=s&wd=广东工业设计城2期西座4楼&c=138&searchFlag=bigBox&version=5&exptype=dep&src_from=webapp_all_bigbox&src=0/i=0&showall=1&pos=0&da_ref=listclk&da_qrtp=41&da_adquery=广东工业设计城2期西座4楼&da_adtitle=广东工业设计城2期西座4楼&detail_from=list&vt=map/?fromhash=1";
 					if($("#map_wrapper").attr("src")==""){
 						$("#map_wrapper").attr("src", map_url);
 					};
