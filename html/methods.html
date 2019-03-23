@@ -148,6 +148,47 @@
 			<!--
             	头部
             -->
+            
+            <div class="am-panel-bd reason_body">
+            	<div class="reason_title">
+            		<span>
+            						  			第一性原理护航
+            						  		</span>
+            	</div>
+            	<p>
+            		没有第一性原理的策划公司， 只能是随波逐流，模仿作业， 这是目前大多数策划公司的软胁。
+            	</p>
+            </div>
+            <div class="am-panel-bd reason_body">
+            	<div class="reason_title">
+            		<span style="padding: 0px 6px;background-color: #EE0000;color: white;">
+            						  			纯手工打造
+            						  		</span>
+            	</div>
+            	<p style="overflow: hidden;width: 100%;font-size:1.5rem ;" class="">
+            		不设项目经理，从顶层设计到落地 策划总监全程对接， 杜绝项目虎头蛇尾或半途夭折。
+            	</p>
+            </div>
+            <div class="am-panel-bd reason_body">
+            	<div class="reason_title">
+            		<span style="padding: 0px 6px;background-color: #EE0000;color: white;">
+            						  			重创意更重传播
+            						  		</span>
+            	</div>
+            	<p style="overflow: hidden;width: 100%;font-size:1.5rem ;" class="">
+            		创意是为传播效率服务，再好的创意，如果得不到传播，没有任何意义， 尖刀连的服务就是为了提高品牌传播效率。
+            	</p>
+            </div>
+            <div class="am-panel-bd reason_body">
+            	<div class="reason_title">
+            		<span style="padding: 0px 6px;background-color: #EE0000;color: white;">
+            						  			方案简介高效
+            						  		</span>
+            	</div>
+            	<p style="overflow: hidden;width: 100%;font-size:1.5rem ;" class="">
+            		没有案牍劳形的吹水PPT推导， 我们主张能不用PPT就尽量不用PPT。 我们擅长在讨论中快速给出方案创意。
+            	</p>
+            </div>
             <!--菜单左侧滑栏-->
             <nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
             	<div style="" class="am-offcanvas" id="offcanvasId">
@@ -284,7 +325,12 @@
 			 var offcanvas_height = $("#index_h").outerHeight()*6+1;
 			$(".am-offcanvas-bar").css("height",offcanvas_height);
 			//侧滑栏高度△
-			
+			//4大理由标题调整
+			$(".reason_title").each(function(){
+				var reason_title_width = Math.ceil($(this).outerWidth()/2);
+				var reason_title_parent_width = Math.ceil($(this).parent().innerWidth()/2);
+				$(this).css("margin-left",reason_title_parent_width-reason_title_width);
+			});
 			//网页加载后
 			$(document).ready(function(){
 				//地图加载
